@@ -1,13 +1,27 @@
 == README
+>Blocipedia is a collaboration wiki.  
+> User Stories:
+>As a user:
+	I want to sign up for a free account by providing a user name, password and email
+	I want to sign in and out of Blocipedia
+	With a standard account, I want to:
+	create 
+	read 
+	update  
+	delete    public wikis
+I want to edit wikis using Markdown syntax 
+	I want to upgrade my account from a free to a paid plan
+As a premium user, I want to -
+    -add 
+   -remove *collaborators* from my private wikis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+
 
 Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+* System dependencies - explain this?
 
 * Configuration
 
