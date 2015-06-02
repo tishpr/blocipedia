@@ -42,7 +42,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'simple_form'
-
+gem 'figaro'
 
 
 # Use ActiveModel has_secure_password
