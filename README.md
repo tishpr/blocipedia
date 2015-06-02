@@ -12,13 +12,16 @@
 	create 
 	read 
 	update  
-	delete    public wikis
-I want to edit wikis using Markdown syntax 
-	I want to upgrade my account from a free to a paid plan
-As a premium user, I want to -
+	delete    (public wikis)
+      I want to edit wikis using Markdown syntax 
+	    I want to upgrade my account from a free to a paid plan   
+
+	    FreePlan  PremiumPlan
+
+    As a premium user, I want to -
     -add 
    -remove *collaborators* from my private wikis
-> 
+ 
 
 
 
