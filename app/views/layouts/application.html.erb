@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Blocipedia</title>
+
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
   
 </head>
 <body>
@@ -14,13 +20,26 @@
     <p class="alert"><%= alert %></p>
 
     <h1>From Twitter bootstrap</h1>
+    <ul>
         <li><%= link_to "Welcome", root_path %></li>
-     <ul class="hmenu">
-        <li><%= link_to "Wikis" %></li>
-        <li><%= link_to "Free Plan" %></li>
-        <li><%= link_to "Premium Plan" %></li>
-   </ul>
-
+     
+</ul>
+ <% if flash[:notice] %>
+         <div class="alert alert-success">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           <%= flash[:notice] %>
+         </div>
+       <% elsif flash[:error] %>
+         <div class="alert alert-danger">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           <%= flash[:error] %>
+         </div>
+       <% elsif flash[:alert] %>
+         <div class="alert alert-warning">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           <%= flash[:alert] %>
+         </div>
+    <% end %>
 <%= yield %>
 </div>
 </div>

@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'bootstrap-sockets' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'bootstrap-sockets', null ]
+5 verbose cache add name=undefined spec="bootstrap-sockets" args=["bootstrap-sockets",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bootstrap-sockets',
+6 verbose parsed url   path: 'bootstrap-sockets',
+6 verbose parsed url   href: 'bootstrap-sockets' }
+7 silly lockFile 921405d5-bootstrap-sockets bootstrap-sockets
+8 verbose lock bootstrap-sockets /Users/Tish/.npm/921405d5-bootstrap-sockets.lock
+9 silly lockFile 921405d5-bootstrap-sockets bootstrap-sockets
+10 silly lockFile 921405d5-bootstrap-sockets bootstrap-sockets
+11 verbose addNamed [ 'bootstrap-sockets', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 675804ea-bootstrap-sockets bootstrap-sockets@
+14 verbose lock bootstrap-sockets@ /Users/Tish/.npm/675804ea-bootstrap-sockets.lock
+15 silly addNameRange { name: 'bootstrap-sockets', range: '*', hasData: false }
+16 verbose url raw bootstrap-sockets
+17 verbose url resolving [ 'https://registry.npmjs.org/', './bootstrap-sockets' ]
+18 verbose url resolved https://registry.npmjs.org/bootstrap-sockets
+19 info trying registry request attempt 1 at 20:41:42
+20 http GET https://registry.npmjs.org/bootstrap-sockets
+21 http 404 https://registry.npmjs.org/bootstrap-sockets
+22 silly registry.get cb [ 404,
+22 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=0',
+22 silly registry.get     'content-length': '51',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Tue, 02 Jun 2015 03:41:43 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-lax1422-LAX',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1433216502.961758,VS0,VE49' } ]
+23 silly lockFile 675804ea-bootstrap-sockets bootstrap-sockets@
+24 silly lockFile 675804ea-bootstrap-sockets bootstrap-sockets@
+25 error 404 'bootstrap-sockets' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 13.4.0
+27 error command "node" "/usr/local/bin/npm" "install" "bootstrap-sockets"
+28 error cwd /Users/Tish/code/blocipedia
+29 error node -v v0.10.26
+30 error npm -v 1.4.3
+31 error code E404
+32 verbose exit [ 1, true ]
