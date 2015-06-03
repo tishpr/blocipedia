@@ -1,2 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+ .user-info {
+   margin-top: 20px;
+ }
+ 
+ .nav {
+   margin-top: 20px;
+ }
+#error_explanation {
+  top-padding: 5px;
+  color: red;
+}

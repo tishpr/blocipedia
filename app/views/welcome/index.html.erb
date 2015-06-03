@@ -1,12 +1,34 @@
+<div id="main-container" class="container">
+<br>
+<div class="jumbotron">
+  <h1>Blocipedia</h1>
+  <p>Blocipedia is a collaboration wiki.</p>
+  <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+</div>
 
-  <div id="main-container" class="container">
-      <div class="row">
-        <div id="sidebar" class="col-xs-3">
-          <!-- sidebar content -->
+<div class="row">
+  <div class="col-md-4">
+    <h2>Free Account</h2>
+    <p>Use this space freely</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Premium Account</h2>
+    <p>Create private wikis and add collaborators.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Projects</h2>
+    <ul><li>Bloccitoff</li><li>OneTenThai</li><li>AguadillaStorage</li></ul>
+  </div>
+</div>
+
+        <div id="sidebar" class="col-xs-3 pull-right">
+          <p>sidebar content </p>
+            <p>sidebar content </p>
         </div>
-        <div id="content" class="col-xs-9">
-          <!--  main content -->
-        </div>
-      </div>
-    </div>
+        
+</div>
+   
   
