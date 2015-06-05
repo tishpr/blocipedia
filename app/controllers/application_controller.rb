@@ -10,7 +10,4 @@ class ApplicationController < ActionController::Base
      devise_parameter_sanitizer.for(:sign_up) << :name
    end
   
-   def hello
-     render text: "Welcome home! The page you are viewing is actually in  hello method on ApplicationController</p>"
-   end
 end
