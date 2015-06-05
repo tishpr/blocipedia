@@ -10,6 +10,7 @@ en:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
+
     # Examples
     # labels:
     #   defaults:
@@ -29,3 +30,21 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+
+    #The wrappers API
+# With Simple Form you can configure how your components will be rendered using the wrappers API. The syntax looks like this:
+ config.wrappers tag: :div, class: :input,
+                 error_class: :field_with_errors do |b|
+
+  # Form extensions
+  b.use :html5
+  b.optional :pattern
+  b.use :maxlength
+  b.use :placeholder
+  b.use :readonly
+
+  # Form components
+  b.use :label_input
+  b.use :hint,  wrap_with: { tag: :span, class: :hint }
+  b.use :error, wrap_with: { tag: :span, class: :error }
+end
