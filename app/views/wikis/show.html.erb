@@ -1,0 +1,6 @@
+<h1><%= @wiki.title %></h1>
+<small>Created by: <%= @wiki.user.name %></small>
+ 
+ <%= link_to "Edit", edit_wiki_path(@wiki), class: 'btn btn-success' %>
+ 
+ <div class="col-md-8"><%= @wiki.body %></div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bloccit</title>
+<title>Blocipedia</title>
 
 <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -11,10 +11,11 @@
 </head>
 <body>
   <div class="container">
-    <h1>Bloccipedia</h1>
-      <h2>Your Personal Wiki </h2>
+    <h1>Blocipedia</h1>
+      <h2>Collaboration Wiki </h2>
         <ul class="nav nav-tabs">
-          <li><%= link_to "Bloccipedia", root_path %></li>
+          <li><%= link_to "Blocipedia", root_path %></li>
+          <li><%= link_to "Wiki", wikis_path %></li>
           <!-- Current user  avatar, signed up, signed in, log off  --> 
 
             <div class="pull-right user-info">
@@ -53,7 +54,9 @@
                     <%= flash[:alert] %>
                 </div>
                   <% end %>
+
               <%= yield %>
+
           </div>
     </body>
 </html>

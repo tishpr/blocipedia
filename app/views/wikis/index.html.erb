@@ -1,0 +1,22 @@
+<div class="container-fluid">
+
+  <div class="row">
+    <table class="table table-bordered table-hover">
+      <caption><h2>Here are <%= current_user.name%>'s Wikis</h2></caption>
+        <tr class="table-hover">
+          <th>Wiki</th>
+          <th>Edit</th>
+          <th>Delete</th>
+          <th>Private?</th>
+        </tr> 
+      <% @wikis.each do |wiki| %> 
+        <tr>
+          <td><h4><%=link_to wiki.title, wiki_path(wiki.id)%></h4></td>
+          <td><h4><%= link_to "Edit", edit_wiki_path(wiki.id), class: 'btn btn-success' %></h4></td>
+          <td><h4><%= button_to "Delete", wiki_path(wiki.id), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger' %></h4></td>
+          <td><h4>yes or no</h4></td>
+        </tr>
+        <% end %> 
+    </table>
+   </div>
+</div>
