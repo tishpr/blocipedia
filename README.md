@@ -1,5 +1,6 @@
 Blocipedia 
-Personal wiki 
+
+                    Personal wiki 
 ===|=
 
 > [xhttps://devcenter.heroku.com/articles/sendgrid#ruby-rails]
@@ -85,3 +86,7 @@ cancel_user_registration GET    /users/cancel(.:format)           devise/registr
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+  ```
+
+  

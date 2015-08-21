@@ -1,0 +1,29 @@
+  Usage: Developers, testers, technical writers use user stories 
+to be able to know what to implement and when they are done. 
+  Product owners track overall progress based on the status of the user stories.
+  Management tends to track user stories rolled up to epics or features
+
+
+As a user, I want to sign up for a free account      /points: 2
+           by providing
+           a user name,
+           password
+           and email
+        so <I can read and comment on public wikis>.                                                       
+
+
+As a registered member, I want to sign in/log out    /points: 3
+                         create wikis 
+                         and  make comments on public wikis
+        so < I can advance discussion in my chosen interest and comment on other wikis.>
+
+As a premium member, I want to create wikis,        /points: 5
+                     add collaborators 
+        so that < I can collaborate and with others on projects > .
+
+As an admin, I want to                              /points: 5
+              read,
+               write,
+                delete,
+                 edit all wikis 
+        so that < decorum is enforced >.
